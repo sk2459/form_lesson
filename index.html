@@ -60,7 +60,7 @@
             <!-- 出身地 -->
             <p class="font_box margin_short_box">出身</p>
             <div class="country">
-              <select name="from" class="margin_box from_input_items border_box">
+              <select name="from" class="margin_box input_items from_input_items border_box">
                 <option value="tokyo">東京</option>
                 <option value="tiba">千葉</option>
                 <option value="saitama">埼玉</option>
@@ -70,7 +70,7 @@
             <!-- メール -->
             <div class="margin_box font_box">
               <p class="margin_short_box">Eメール<span class="red_box">※</span></p>
-              <input class="mail input_items border_box" type="email" name="mail" placeholder="ex)hoge@example.com">
+              <input class="mail input_items border_box" type="email" name="mail" placeholder="ex)hoge@example.com" required>
             </div>
             <!-- 電話番号 -->
             <div class="margin_box font_box">
@@ -80,12 +80,12 @@
             <!-- パスワード -->
             <div class="margin_box font_box">
               <p class="margin_short_box">パスワード<span class="red_box">※</span></p>
-              <input class="pass input_items border_box" type="password" name="password">
+              <input class="pass input_items border_box" type="password" name="password" required>
             </div>
             <!-- パスワード再確認 -->
             <div class="margin_box font_box">
               <p class="margin_short_box">パスワード（確認用）<span class="red_box">※</span></p>
-              <input class="pass_comfirmation input_items border_box" type="password" name="password_comfirmation">
+              <input class="pass_comfirmation input_items border_box" type="password" name="password_comfirmation" required>
             </div>
             <!-- 希望コース -->
             <div class="margin_box">
@@ -115,14 +115,7 @@
               <div class="margin_box send_innor">
                 <input class="send_input_items" type="submit" value="アカウント作成">
               </div>
-              <div class="">
-                <p class="send_text">アカウントを作成することにより、
-                  <a href="#" class="color_text">利用規約</a>
-                  と
-                  <a href="#" class="color_text">プライバシーポリシー</a>
-                  に同意するものとします。
-                </p>
-              </div>
+                <p class="send_text">アカウントを作成することにより、<a href="#" class="color_text">利用規約</a>と<a href="#" class="color_text">プライバシーポリシー</a>に同意するものとします。</p>
             </div>
           </form>
         </div>

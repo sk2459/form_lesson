@@ -48,8 +48,9 @@
 }
 
 .main_box{
-  padding: 50px 70px;
+  padding: 48px 64px;
   background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
 }
 
 .ak_text{
@@ -186,7 +187,7 @@
   content: '';
   position: absolute;
   left: -14px;
-  top: 50%;
+  top: 45%;
   height: 8px;
   width: 8px;
   transform: translateY(-50%);
@@ -195,11 +196,10 @@
 }
 
 .from_input_items{
-  height: 36px;
   border-radius: 4px;
-  box-sizing: border-box;
   width: 50%;
   background-color: #fbfbfb;
+  padding: 5px;
   -webkit-appearance: none;
 }
 
@@ -271,7 +271,7 @@
   content:"";
   transform: rotate(45deg);
   border-right: 3px solid #01bfbd;
-  border-bottom: 3px solid #01a6a4;
+  border-bottom: 3px solid #01bfbd;
   height: 16px;
   width: 8px;
   position: absolute;
@@ -287,12 +287,18 @@
   background-color: #01bfbd;
   color: #fff;
   transition: 0.3s;
+  outline: none;
 }
 
 .send_input_items:hover{
   cursor: pointer;
   background-color: #01a6a4;
   transition: 0.3s;
+}
+
+.send_input_items:active{
+  background-color: #fff;
+  color: #01a6a4;
 }
 
 .send_text{
@@ -306,6 +312,10 @@
 }
 
 .color_text{
-  color: #01bfbd;
+  color: #01a6a4;
+}
+
+.color_text:hover{
+  color: #01bfbd
 }
 
