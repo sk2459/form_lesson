@@ -164,6 +164,7 @@
 
 .in_radio_box{
   position: relative;
+  cursor: pointer;
 }
 
 .left_box{
