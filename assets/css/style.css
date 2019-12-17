@@ -1,1 +1,311 @@
 @charset "utf-8";
+
+.wrapper{
+  background-color: #f2f6f7;
+  width: 100%;
+  padding: 32px 0;
+}
+
+.inner{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.center_box{
+  text-align: center;
+}
+
+.margin_box{
+  margin-bottom: 20px;
+}
+
+.border_box{
+  border: 1px solid #d9d9d9;
+}
+
+.font_box{
+  font-size: 12px;
+}
+
+.margin_short_box{
+  margin: 5px;
+}
+
+.input_items:focus{
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.input_items{
+  height: 36px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fbfbfb;
+  outline: none;
+  padding: 5px;
+}
+
+.main_box{
+  padding: 50px 70px;
+  background-color: #fff;
+}
+
+.ak_text{
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.sns_wrapper{
+  display: flex;
+}
+
+.fb_box{
+  width: 50%;
+  background-color: #3b5999;
+  border-radius: 5px;
+  padding: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.inner_fb_text{
+  color: #fff;
+}
+
+.fb_box:hover{
+  background-color: #344e87;
+  transition: 0.3s;
+}
+
+.gg_box{
+  width: 50%;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.inner_gg_text{
+  color: red;
+}
+
+.gg_box:hover{
+  background-color: #f7f7f7;
+  transition: 0.3s;
+}
+
+.time{
+  margin-bottom: 20px;
+}
+
+.tm_text{
+  color: #929697;
+  font-size: 12px;
+}
+
+.akj_box{
+  position: relative;
+}
+
+.akj{
+  color: #929697;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.akj::before,.akj::after{
+  content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: #ececec;
+  display: block;
+}
+
+.name_box{
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.items{
+ background-color: #fbfbfb;
+ padding: 5px;
+}
+
+.first_name{
+  width: 50%;
+}
+
+.red_box{
+  color: #dd4b39;
+}
+
+.second_name{
+  margin-left: 16px;
+  width: 50%;
+}
+
+.radio_box{
+  display: none;
+}
+
+/* .radio_top{
+  position: relative;
+} */
+
+.in_radio_box{
+  position: relative;
+}
+
+.left_box{
+  margin-left: 25px;
+}
+
+.in_radio_box span::before{
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+  position: absolute;
+  transform: translateY(-50%);
+  left: -18px;
+  top: 8px;
+}
+
+.radio_box:checked + span::after{
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+.from_input_items{
+  height: 36px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: #fbfbfb;
+  -webkit-appearance: none;
+}
+
+/* .from_input_items::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 100px;
+  width: 100px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+} */
+
+.country{
+  position: relative;
+}
+
+.country::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 230px;
+  top: 25%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.comment{
+  resize: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #fbfbfb;
+}
+
+.check_title{
+  margin-bottom: 5px;
+}
+
+.check{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.check_text{
+  display: none;
+}
+
+.check_in_text{
+  padding-left: 25px;
+}
+
+.check_in_text::before{
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  left: 0;
+}
+
+.check_text:checked + .check_in_text::after{
+  content:"";
+  transform: rotate(45deg);
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01a6a4;
+  height: 16px;
+  width: 8px;
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+}
+
+.send_input_items{
+  height: 50px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #01bfbd;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.send_input_items:hover{
+  cursor: pointer;
+  background-color: #01a6a4;
+  transition: 0.3s;
+}
+
+.send_text{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.bottom_text{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.color_text{
+  color: #01bfbd;
+}
+

@@ -10,6 +10,129 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    
+    <section class="wrapper">
+      <div class="inner">
+        <div class="main_box margin_box">
+          <h1 class="ak_text center_box">アカウント作成</h1>
+          <div class="sns_wrapper margin_box">
+            <div class="fb_box center_box">
+              <a class="inner_fb_text" href="#" >Facebookでスタート</a>
+            </div>
+            <div class="gg_box center_box">
+              <a class="inner_gg_text" href="#">Golgleでスタート</a>
+            </div>
+          </div>
+          <div class="time">
+            <p class="tm_text center_box">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          </div>
+            <p class="akj center_box margin_box">アカウント情報</p>
+          
 
+          <form action="#" method="post">
+            <!-- 名字・名前 -->
+            <div class="name_box">
+              <div class="first_name font_box">
+                <p>名字 <span class="red_box">※</span></p><br>
+                <input class="items input_items border_box" type="text" name="yourneme" required>
+              </div>
+              <div class="second_name font_box">
+                <p>名前 <span class="red_box">※</span></p><br>
+                <input class="items input_items border_box" type="text" name="yourneme" required>
+              </div>
+            </div>
+            <!-- 性別 -->
+            <div class="margin_box">
+              <p class="font_box margin_short_box">性別</p>
+              <label class="in_radio_box left_box" for="men">
+                <input type="radio" name="gender" id="men" class="radio_box">
+                <span>男性</span>
+              </label>
+              <label class="in_radio_box left_box" for="women">
+                <input type="radio" name="gender" class="radio_box" id="women"/>
+                <span>女性</span>
+              </label>
+              <label class="in_radio_box left_box" for="other">
+                <input type="radio" name="gender" class="radio_box" id="other"/>
+                <span>その他</span>
+              </label>
+            </div>
+            <!-- 出身地 -->
+            <p class="font_box margin_short_box">出身</p>
+            <div class="country">
+              <select name="from" class="margin_box from_input_items border_box">
+                <option value="tokyo">東京</option>
+                <option value="tiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
+              </select>
+            </div>
+            <!-- メール -->
+            <div class="margin_box font_box">
+              <p class="margin_short_box">Eメール<span class="red_box">※</span></p>
+              <input class="mail input_items border_box" type="email" name="mail" placeholder="ex)hoge@example.com">
+            </div>
+            <!-- 電話番号 -->
+            <div class="margin_box font_box">
+              <p class="margin_short_box">電話番号</p>
+              <input class="tel input_items border_box" type="tel" name="tel-namber" placeholder="ex)09012345678">
+            </div>
+            <!-- パスワード -->
+            <div class="margin_box font_box">
+              <p class="margin_short_box">パスワード<span class="red_box">※</span></p>
+              <input class="pass input_items border_box" type="password" name="password">
+            </div>
+            <!-- パスワード再確認 -->
+            <div class="margin_box font_box">
+              <p class="margin_short_box">パスワード（確認用）<span class="red_box">※</span></p>
+              <input class="pass_comfirmation input_items border_box" type="password" name="password_comfirmation">
+            </div>
+            <!-- 希望コース -->
+            <div class="margin_box">
+              <p class="check_title font_box">希望コース</p>
+              <div>
+                <div class="check">
+                <input id="front" class="check_text" type="checkbox" name="sport">
+                <label class="check_in_text" for="front">フロントエンド</label>
+                </div>
+                <div class="check">
+                <input id="back" class="check_text" type="checkbox" name="sport">
+                <label class="check_in_text" for="back">バックエンド</label>
+                </div>
+                <div class="check">
+                <input id="app" class="check_text" type="checkbox" name="sport">
+                <label class="check_in_text" for="app">アプリ</label>
+                </div>
+              </div>
+            </div>  
+            <!-- 備考 -->
+            <div class="comment_box margin_box font_box"> 
+              <p class="margin_short_box">備考</p>
+              <textarea class="comment border_box input_items" name="comment" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <!-- 送信 -->
+            <div class="send">
+              <div class="margin_box send_innor">
+                <input class="send_input_items" type="submit" value="アカウント作成">
+              </div>
+              <div class="">
+                <p class="send_text">アカウントを作成することにより、
+                  <a href="#" class="color_text">利用規約</a>
+                  と
+                  <a href="#" class="color_text">プライバシーポリシー</a>
+                  に同意するものとします。
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="bottom_text center_box" >
+          <p>すでにアカウントお持ちですか？
+            <a href="#" class="color_text">ログイン</a>
+          </p>
+          <a href="#" class="color_text">確認メールが届きませんか？</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
